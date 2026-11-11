@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://notifox.vercel.app/sitemap.xml
+Sitemap: https://notifox1.vercel.app/sitemap.xml
