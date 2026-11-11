@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Privacy Policy – Notifox Notification Saver | Gondal Studios</title>
+  <meta name="description" content="Official Privacy Policy for Notifox Android Notification History App by Gondal Studios. Transparent disclosure regarding notification access, local storage, and ad networks.">
+  <meta name="keywords" content="Notifox privacy policy, notification history privacy, Android notification listener permissions, Gondal Studios">
+  <meta name="author" content="Gondal Studios">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://notifox.vercel.app/pages/privacy.html">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://notifox.vercel.app/pages/privacy.html">
+  <meta property="og:site_name" content="Notifox">
+  <meta property="og:title" content="Privacy Policy – Notifox Notification Saver | Gondal Studios">
+  <meta property="og:description" content="Official Privacy Policy for Notifox Android Notification History App. Disclosures on Android Notification Access and local SQLite storage.">
+  <meta property="og:image" content="https://notifox.vercel.app/assets/icons/app-icon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy – Notifox Notification Saver">
+  <meta name="twitter:description" content="Transparent privacy policy for Notifox Android notification manager by Gondal Studios.">
+  <meta name="twitter:image" content="https://notifox.vercel.app/assets/icons/app-icon.png">
+
+  <!-- Favicon (PNG) -->
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/app-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Breadcrumbs Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://notifox.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Privacy Policy",
+        "item": "https://notifox.vercel.app/pages/privacy.html"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="legal-page">
+
+  <!-- Navigation Bar -->
+  <header class="ps-navbar" role="banner">
+    <div class="container ps-navbar-inner">
+      <a href="../index.html" class="ps-brand" aria-label="Notifox Home">
+        <img src="../assets/icons/app-icon.png" alt="Notifox Logo" class="brand-icon" width="36" height="36">
+        <span class="brand-text">Notifox</span>
+      </a>
+
+      <nav class="ps-nav-links" aria-label="Main Navigation">
+        <a href="../index.html" class="nav-item">Overview</a>
+        <a href="../index.html#features" class="nav-item">Features</a>
+        <a href="privacy.html" class="nav-item active">Privacy Policy</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="ps-nav-cta">
+        <a href="#" class="btn-download-trigger btn-header-action" data-download-btn target="_blank" rel="noopener noreferrer">
+          <span>Download APK</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal-main">
+    <div class="container container-readable">
+      <article class="legal-article">
+        <header class="legal-header">
+          <div class="legal-badge">Official Policy</div>
+          <h1 class="legal-title">Privacy Policy for Notifox</h1>
+          <p class="legal-date">Last Updated: <span data-config="lastUpdated">November 2024</span> &bull; Developer: <span data-config="developerName">Gondal Studios</span></p>
+        </header>
+
+        <section class="legal-section">
+          <h2>1. Introduction</h2>
+          <p>This Privacy Policy explains how <strong>Notifox</strong> ("the Application"), developed by <strong>Gondal Studios</strong> ("we", "us", or "our"), processes information when you install and use the notification history app on your Android device.</p>
+          <p>We are committed to operating with complete transparency. We do not make deceptive privacy claims, nor do we state that "no data is ever collected" if third-party advertising SDKs process advertising identifiers.</p>
+        </section>
+
+        <section class="legal-section">
+          <h2>2. Android Notification Access Permission</h2>
+          <p>Notifox requires special Android system authorization known as <strong>Notification Access</strong> (via Android’s native <code>NotificationListenerService</code>). This permission is essential to provide notification tracking, WhatsApp notification saving, and notification log functionality.</p>
+          <ul>
+            <li><strong>Purpose:</strong> Notification Access is utilized solely to receive notifications posted by applications you have permitted Notifox to monitor, enabling notification history viewing, sorting, and organization.</li>
+            <li><strong>Scope:</strong> The Application reads notification metadata, including the originating package name, title, timestamp, and message body content delivered to your system tray.</li>
+            <li><strong>Important Limitation:</strong> Notifox captures notifications when they arrive while the background listener service is active. It cannot recover notifications or messages delivered before Notifox was installed or while notification access was disabled.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>3. Storage Architecture: Local-Only Storage</h2>
+          <p>Notifox is built on a <strong>local-only storage architecture</strong>:</p>
+          <ul>
+            <li><strong>No Remote Notification Server:</strong> Notifox does <strong>not</strong> operate, maintain, or transmit your saved notification contents to any cloud server or remote database owned or controlled by Gondal Studios.</li>
+            <li><strong>Device Database:</strong> Your recorded notification history is saved directly inside your device's private application sandbox (using a local SQLite database).</li>
+            <li><strong>Uninstallation Behavior:</strong> When you uninstall Notifox from your Android device, all locally stored application data and notification logs are removed immediately by the Android operating system, subject to standard Android system backup preferences configured on your device.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>4. Third-Party Advertising and Analytics SDKs</h2>
+          <p>To support ongoing development and maintenance, Notifox may incorporate third-party advertising SDKs (such as Google AdMob or Unity Ads) to serve advertisements within the Application:</p>
+          <ul>
+            <li>These third-party advertising networks may automatically collect and process certain non-sensitive device telemetry, including your device's <strong>Google Advertising ID (AAID)</strong>, IP address, device brand and model, operating system version, and ad interaction logs.</li>
+            <li>This information is governed by the respective privacy policies of those third-party providers. We encourage users to review Google's advertising privacy disclosures at <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">policies.google.com/technologies/ads</a>.</li>
+            <li><strong>Important:</strong> Third-party advertising SDKs integrated into Notifox do not receive or have access to the contents of your recorded notification history.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>5. User Control and Permissions</h2>
+          <p>You maintain full control over the permissions granted to Notifox:</p>
+          <ul>
+            <li>You can revoke Notifox's Notification Access at any time through your Android device settings under <em>Settings &gt; Apps &amp; Notifications &gt; Special App Access &gt; Notification Access</em>.</li>
+            <li>Within Notifox, you can clear all recorded history or filter specific applications you do not wish to capture.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. Security Limitations</h2>
+          <p>While notification logs reside strictly on your physical handset, the security of data saved on the device depends on your device's physical security, Android system lock mechanisms, lock-screen authentication, and whether your device has undergone rooting or unauthorized firmware modifications.</p>
+        </section>
+
+        <section class="legal-section">
+          <h2>7. Contact and Inquiries</h2>
+          <p>If you have questions, feedback, or concerns regarding this Privacy Policy or Notifox data handling practices, please contact the developer:</p>
+          <div class="legal-contact-box">
+            <p><strong>Gondal Studios</strong></p>
+            <p>Email: <a href="#" class="footer-email-link" data-config-email="contactEmail"><span data-config="contactEmail">gondalstudios.official@gmail.com</span></a></p>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="ps-footer">
+    <div class="container footer-inner">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p class="copyright-text">&copy; <span id="currentYear">2025</span> <span data-config="developerName">Gondal Studios</span>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../config.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
