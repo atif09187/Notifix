@@ -7,7 +7,7 @@
 
 const NOTIFOX_CONFIG = {
   // Production Website Domain (Used for Canonicals, Sitemap & Schema)
-  siteUrl: "https://notifox.vercel.app",
+  siteUrl: "https://notifox1.vercel.app",
 
   // Application Information
   appName: "Notifox",
@@ -15,14 +15,14 @@ const NOTIFOX_CONFIG = {
   category: "Tools",
   version: "1.2.4",
   versionCode: "124",
-  apkSize: "8.4 MB",
-  androidRequirement: "Android 8.0 (Oreo) and up",
+  apkSize: "11.72 MB",
+  androidRequirement: "Android 5.0 (Oreo) and up",
   releaseDate: "November 2024",
   lastUpdated: "November 2024",
   packageName: "com.gondalstudios.notifox",
 
   // Download Target (Supports Google Drive, MediaFire, or self-hosted direct APK)
-  downloadUrl: "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_HERE",
+  downloadUrl: "https://www.mediafire.com/file/hdta3col2gzh6im/Notifox-Release.apk/file",
 
   // Developer Support & Inquiries
   contactEmail: "gondalstudios.official@gmail.com",
